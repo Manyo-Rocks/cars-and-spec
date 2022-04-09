@@ -16,10 +16,10 @@ ReactDOM.render(
   <BrowserRouter> 
   <App />
   <Routes>
-      <Route   path='home' index element={<Home />} />
+      <Route   path='/' index element={<Home />} />
       
-      <Route  path="cars" element={<Cars />}/>
-        <Route  path= ":carId" element={<Car/>} >
+      <Route  path="cars" element={<Cars />}>
+        <Route  path= ":carId" element={<Car/>} />
       </Route>
       <Route exact path="about" element={<About />} /> 
     
